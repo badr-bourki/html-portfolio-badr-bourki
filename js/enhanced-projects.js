@@ -122,7 +122,7 @@ class EnhancedProjects {
   getDefaultProjects() {
     return [
       {
-        imgSrc: '/assets/projects/project1.png',
+        imgSrc: '../assets/projects/project1.png',
         title: 'E-Commerce Platform',
         description:
           'A full-stack e-commerce solution with product listings, shopping cart, and secure payment integration. Features real-time inventory management and user authentication.',
@@ -131,7 +131,7 @@ class EnhancedProjects {
         technologies: ['React', 'Node.js', 'MongoDB', 'Stripe']
       },
       {
-        imgSrc: '/assets/projects/project2.png',
+        imgSrc: '../assets/projects/project2.png',
         title: 'Task Management App',
         description:
           'A collaborative task management system with real-time updates and team collaboration features. Includes drag-and-drop boards, notifications, and advanced filtering.',
@@ -140,7 +140,7 @@ class EnhancedProjects {
         technologies: ['Vue.js', 'Firebase', 'Tailwind CSS']
       },
       {
-        imgSrc: '/assets/projects/project3.png',
+        imgSrc: '../assets/projects/project3.png',
         title: 'AI Chat Application',
         description:
           'An intelligent chatbot powered by AI with natural language processing and context awareness. Supports multiple conversations and conversation history.',
@@ -149,7 +149,7 @@ class EnhancedProjects {
         technologies: ['React', 'OpenAI API', 'Express', 'PostgreSQL']
       },
       {
-        imgSrc: '/assets/projects/project1.png',
+        imgSrc: '../assets/projects/project1.png',
         title: 'Analytics Dashboard',
         description:
           'Real-time analytics dashboard with interactive charts and data visualization. Displays key metrics and trends with customizable widgets.',
@@ -158,7 +158,7 @@ class EnhancedProjects {
         technologies: ['React', 'D3.js', 'GraphQL', 'Node.js']
       },
       {
-        imgSrc: '/assets/projects/project2.png',
+        imgSrc: '../assets/projects/project2.png',
         title: 'Social Network Platform',
         description:
           'A social networking platform with user profiles, messaging, and content sharing. Includes real-time notifications and feed algorithms.',
@@ -167,7 +167,7 @@ class EnhancedProjects {
         technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'WebSockets']
       },
       {
-        imgSrc: '/assets/projects/project3.png',
+        imgSrc: '../assets/projects/project3.png',
         title: 'Fitness Tracker App',
         description:
           'A comprehensive fitness tracking application with workout logging and progress analytics. Features mobile-first design and offline support.',
