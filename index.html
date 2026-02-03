@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Full Stack Web Developer">
+    <meta name="keywords" content="web developer, portfolio, full stack, JavaScript, React">
+    <meta name="author" content="badr bourki">
+    
+    <title>Full Stack Developer Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-poppins overflow-x-hidden">
+    
+    <!-- Navigation Bar - Enhanced -->
+    <nav></nav>
+    
+    <!-- Hero Section - Enhanced WebGL -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- WebGL Canvas (populated by enhanced-webgl-hero.js) -->
+        
+        <!-- Hero Content Overlay -->
+        <div class="hero-content-overlay">
+            <!-- Trust Badge -->
+            <div class="trust-badge animate-fade-in-down">
+                <div class="trust-badge-content">
+                    <div class="flex gap-1">
+                        <span style="color: rgb(255, 215, 0);">⭐</span>
+                        <span style="color: rgb(255, 140, 0);">⭐</span>
+                        <span style="color: rgb(217, 119, 6);">⭐</span>
+                    </div>
+                    <span>Premium Web Development Portfolio</span>
+                </div>
+            </div>
+
+            <div class="hero-heading max-w-5xl mx-auto px-4 space-y-2">
+                <!-- Main Heading with Animation -->
+                <h1 class="hero-headline animate-fade-in-up animation-delay-200">
+                    Hi, I'm a
+                </h1>
+                <h1 class="hero-headline animate-fade-in-up animation-delay-400">
+                    Full Stack Developer
+                </h1>
+            </div>
+            
+            <!-- Subtitle with Animation -->
+            <div class="max-w-3xl mx-auto px-4 animate-fade-in-up animation-delay-600">
+                <p class="hero-subtitle">
+                    I build modern, fast, and scalable web applications with clean code and exceptional user experiences.
+                </p>
+            </div>
+            
+            <!-- CTA Buttons with Animation -->
+            <div class="hero-buttons animate-fade-in-up animation-delay-800">
+                <button class="hero-button hero-button-primary" onclick="document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' })">
+                    View My Work
+                </button>
+                <button class="hero-button hero-button-secondary" onclick="window.open('public/cv.pdf')">
+                    Download CV
+                </button>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in-down animation-delay-600" style="animation-delay: 0.8s">
+                <p class="text-slate-400 text-sm mb-2">Scroll to explore</p>
+                <div class="flex justify-center">
+                    <div class="animate-bounce">
+                        <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section - Enhanced -->
+    <section id="about" class="py-32 relative overflow-hidden border-b border-slate-800">
+        <!-- Background accent -->
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-600/50 to-transparent"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left - Profile Image -->
+                <div class="about-image-container relative hidden lg:flex items-center justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Background glow -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-2xl blur-3xl"></div>
+                        <!-- Image -->
+                        <img src="public/me.jpg" alt="Profile" class="relative w-full h-auto rounded-2xl shadow-2xl object-cover aspect-square" />
+                    </div>
+                </div>
+
+                <!-- Right - Content -->
+                <div>
+                    <!-- Section label -->
+                    <div class="about-label overflow-hidden">
+                        <p class="text-indigo-400 font-medium uppercase tracking-widest text-sm mb-4 flex items-center gap-2">
+                            <span class="about-label-line"></span>
+                            About Me
+                        </p>
+                    </div>
+
+                    <!-- Title -->
+                    <h2 class="about-title text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+                        Passionate About
+                        <br />
+                        <span class="text-gradient">Creating Digital</span>
+                        <br />
+                        Experiences
+                    </h2>
+
+                    <!-- Description -->
+                    <div class="space-y-6 text-muted-foreground text-lg">
+                        <p class="about-paragraph">
+                            I'm a Full Stack Web Developer with a strong focus on frontend development
+                            and UI/UX design. I believe that great websites combine beautiful aesthetics
+                            with flawless functionality.
+                        </p>
+                        <p class="about-paragraph">
+                            My approach centers on clean code, modern design principles, and performance
+                            optimization. I'm constantly learning new technologies and pushing the
+                            boundaries of what's possible on the web.
+                        </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-slate-700/50">
+                        <div>
+                            <p class="about-stat-value text-3xl font-bold text-foreground mb-1">10+</p>
+                            <p class="text-sm text-muted-foreground">Projects</p>
+                        </div>
+                        <div>
+                            <p class="about-stat-value text-3xl font-bold text-foreground mb-1">5+</p>
+                            <p class="text-sm text-muted-foreground">Technologies</p>
+                        </div>
+                        <div>
+                            <p class="about-stat-value text-3xl font-bold text-foreground mb-1">100%</p>
+                            <p class="text-sm text-muted-foreground">Dedication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section - Orbiting Skills -->
+    <section id="skills" class="py-32 relative overflow-hidden border-b border-slate-800">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/50 to-slate-900"></div>
+        
+        <!-- Floating orbs -->
+        <div class="absolute top-1/4 -left-32 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px] animate-pulse"></div>
+        <div class="absolute bottom-1/4 -right-32 w-80 h-80 bg-purple-500/10 rounded-full blur-[120px] animate-pulse" style="animation-delay: 1s;"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header -->
+            <div class="text-center mb-12 animate-fade-in-up">
+                <p class="text-cyan-400 font-medium uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+                    <span class="w-8 h-px bg-gradient-to-r from-cyan-400 to-purple-500"></span>
+                    My Skills
+                    <span class="w-8 h-px bg-gradient-to-r from-purple-500 to-cyan-400"></span>
+                </p>
+                <h2 class="text-5xl font-bold mb-4">
+                    Technologies I <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">Master</span>
+                </h2>
+                <p class="text-slate-300 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
+                    Interact with the orbiting icons to explore my technical expertise
+                </p>
+            </div>
+
+            <!-- Orbiting Skills Container -->
+            <div id="orbiting-skills" class="my-16 animate-fade-in-up animation-delay-400"></div>
+            
+            <!-- Additional Tech Stack -->
+            <div class="mt-16 fade-up">
+                <h3 class="text-xl font-semibold mb-6 text-center">Additional Technologies</h3>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm hover:border-cyan-400 hover:bg-slate-700 transition cursor-default">VS Code</span>
+                    <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm hover:border-cyan-400 hover:bg-slate-700 transition cursor-default">Git</span>
+                    <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm hover:border-cyan-400 hover:bg-slate-700 transition cursor-default">REST APIs</span>
+                    <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm hover:border-cyan-400 hover:bg-slate-700 transition cursor-default">GraphQL</span>
+                    <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm hover:border-purple-400 hover:bg-slate-700 transition cursor-default">WebGL</span>
+                    <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm hover:border-purple-400 hover:bg-slate-700 transition cursor-default">Three.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section - Enhanced -->
+    <section id="projects" class="py-20 relative overflow-hidden border-b border-slate-800">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-slate-950"></div>
+
+        <!-- Floating orbs for aesthetic -->
+        <div class="absolute top-1/3 -left-40 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/3 -right-40 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <p class="text-cyan-400 font-medium uppercase tracking-widest text-sm mb-4 flex items-center justify-center gap-2">
+                    <span class="w-8 h-px bg-gradient-to-r from-cyan-400 to-purple-500"></span>
+                    My Work
+                    <span class="w-8 h-px bg-gradient-to-r from-purple-500 to-cyan-400"></span>
+                </p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">Projects</span>
+                </h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg animate-fade-in-up animation-delay-200">
+                    Explore my portfolio of full-stack projects showcasing modern design and robust functionality
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="animate-fade-in-up animation-delay-400"></div>
+
+            <!-- View More CTA -->
+            <div class="text-center mt-12 animate-fade-in-up animation-delay-600">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 transform hover:scale-105">
+                    View All Projects
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Display Cards - Featured Projects -->
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Get In Touch</h2>
+            <p class="text-center text-slate-300 mb-12">Have a project in mind? Let's work together to create something amazing.</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Email Card -->
+                <a href="badrbourki456@example.com" class="fade-up bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-indigo-600 transition text-center group">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1">Email</h3>
+                    <p class="text-slate-300 text-sm">badrbourki456@example.com</p>
+                </a>
+                
+                <!-- LinkedIn Card -->
+                <a href="http://www.linkedin.com/in/badr-bourki-6b70a3223" target="_blank" class="fade-up bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-indigo-600 transition text-center group">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1">LinkedIn</h3>
+                    <p class="text-slate-300 text-sm">yourprofile</p>
+                </a>
+                
+                <!-- GitHub Card -->
+                <a href="https://github.com/badr-bourki" target="_blank" class="fade-up bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-indigo-600 transition text-center group">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1">GitHub</h3>
+                    <p class="text-slate-300 text-sm">yourprofile</p>
+                </a>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="bg-slate-800/50 border border-slate-700 rounded-lg p-8 fade-up">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 transition">
+                            <span class="error-message text-red-400 text-sm hidden mt-1"></span>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 transition">
+                            <span class="error-message text-red-400 text-sm hidden mt-1"></span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project inquiry" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 transition">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-600 focus:ring-2 focus:ring-indigo-600/20 transition resize-none"></textarea>
+                        <span class="error-message text-red-400 text-sm hidden mt-1"></span>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                    
+                    <div id="form-message" class="hidden p-4 rounded-lg text-center font-medium"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">© 2026 Your Name. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-indigo-400 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-slate-400 hover:text-indigo-400 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="text-slate-400 hover:text-indigo-400 transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="/js/enhanced-webgl-hero.js"></script>
+    <script src="/js/enhanced-orbiting-skills.js"></script>
+    <script src="/js/enhanced-projects.js"></script>
+    <script src="/js/enhanced-display-cards.js"></script>
+    <script src="/js/enhanced-navbar.js"></script>
+    <script src="/js/enhanced-hero.js"></script>
+    <script src="/js/enhanced-about.js"></script>
+    <script src="/js/enhanced-skills.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
