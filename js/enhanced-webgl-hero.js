@@ -638,18 +638,37 @@ class EnhancedHeroAnimation {
         const titleElement = document.querySelector('h1');
         if (!titleElement) return;
 
-        const originalText = titleElement.textContent;
-        titleElement.innerHTML = '';
+        // Preserve the inner HTML to keep gradient spans intact
+        const originalHTML = titleElement.innerHTML;
+        const textContent = titleElement.textContent;
+        
+        // Split only the plain text parts, not the spans
+        let newHTML = '';
+        let currentNode = titleElement.firstChild;
+        let letterIndex = 0;
 
-        const letters = originalText.split('');
-        letters.forEach((letter, index) => {
-            const span = document.createElement('span');
-            span.textContent = letter;
-            span.style.display = 'inline-block';
-            span.style.animation = `letterFade 0.6s ease-out forwards`;
-            span.style.animationDelay = `${index * 0.03}s`;
-            titleElement.appendChild(span);
-        });
+        while (currentNode) {
+            if (currentNode.nodeType === Node.TEXT_NODE) {
+                // Split text nodes into individual letters
+                const text = currentNode.textContent;
+                text.split('').forEach((letter) => {
+                    const span = document.createElement('span');
+                    span.textContent = letter;
+                    span.style.display = 'inline-block';
+                    span.style.animation = `letterFade 0.6s ease-out forwards`;
+                    span.style.animationDelay = `${letterIndex * 0.03}s`;
+                    titleElement.insertBefore(span, currentNode);
+                    letterIndex++;
+                });
+                currentNode.remove();
+            } else if (currentNode.nodeType === Node.ELEMENT_NODE) {
+                // Keep spans (like gradient spans) intact
+                letterIndex += currentNode.textContent.length;
+                currentNode = currentNode.nextSibling;
+            } else {
+                currentNode = currentNode.nextSibling;
+            }
+        }
     }
 
     // Morphing blob animation
