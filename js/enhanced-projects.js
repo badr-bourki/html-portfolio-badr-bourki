@@ -127,25 +127,25 @@ class EnhancedProjects {
         description:
           'A full-stack e-commerce solution with product listings, shopping cart, and secure payment integration. Features real-time inventory management and user authentication.',
         demoLink: 'https://vitahealth-six.vercel.app/',
-        githubLink: 'https://github.com',
+        githubLink: 'https://github.com/badr-bourki/vitahealth',
         technologies: ['React', 'Node.js', 'MongoDB', 'Stripe']
       },
       {
         imgSrc: '../assets/projects/project2.png',
-        title: 'Task Management App',
+        title: 'html-game App',
         description:
-          'A collaborative task management system with real-time updates and team collaboration features. Includes drag-and-drop boards, notifications, and advanced filtering.',
+          'Learn HTML by Building It.',
         demoLink: 'https://html-quest-game.vercel.app/',
-        githubLink: 'https://github.com',
+        githubLink: 'https://github.com/badr-bourki/html-quest-game',
         technologies: ['Vue.js', 'Firebase', 'Tailwind CSS']
       },
       {
         imgSrc: '../assets/projects/project3.png',
-        title: 'AI Chat Application',
+        title: 'Al Nakhuahn',
         description:
           'An intelligent chatbot powered by AI with natural language processing and context awareness. Supports multiple conversations and conversation history.',
-        demoLink: 'https://m-d-lime.vercel.app/',
-        githubLink: 'https://github.com',
+        demoLink: 'https://al-nakhuah.vercel.app/',
+        githubLink: 'https://github.com/badr-bourki/al-nakhuah',
         technologies: ['React', 'OpenAI API', 'Express', 'PostgreSQL']
       },
       {
@@ -154,25 +154,25 @@ class EnhancedProjects {
         description:
           'Restaurant Al Baraka is a professional and fully-featured website for a traditional Moroccan restaurant that offers an authentic dining experience. The website is carefully designed to reflect authentic Moroccan identity with a modern contemporary touch.',
         demoLink: 'https://restorent-baraka.vercel.app/',
-        githubLink: 'https://github.com',
+        githubLink: 'https://github.com/badr-bourki/restorent-baraka',
         technologies: ['React', 'D3.js', 'GraphQL', 'Node.js']
       },
       {
-        imgSrc: '../assets/projects/project2.png',
-        title: 'Social Network Platform',
+        imgSrc: '../assets/projects/project5.png',
+        title: 'TaskFlow Pro',
         description:
           'A social networking platform with user profiles, messaging, and content sharing. Includes real-time notifications and feed algorithms.',
-        demoLink: 'https://html-quest-game.vercel.app/',
-        githubLink: 'https://github.com',
+        demoLink: 'https://do-list-app-mauve.vercel.app/',
+        githubLink: 'https://github.com/badr-bourki/do-list-app',
         technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'WebSockets']
       },
       {
-        imgSrc: '../assets/projects/project3.png',
-        title: 'Fitness Tracker App',
+        imgSrc: '../assets/projects/project6.png',
+        title: 'CYCLISTE',
         description:
-          'A comprehensive fitness tracking application with workout logging and progress analytics. Features mobile-first design and offline support.',
-        demoLink: 'https://m-d-lime.vercel.app/',
-        githubLink: 'https://github.com',
+          'Experience the ultimate thrill of the ride. Where passion meets precision, and every journey becomes a legend on two wheels.',
+        demoLink: 'https://motocyvle1.vercel.app/',
+        githubLink: 'https://github.com/badr-bourki/motocyvle1',
         technologies: ['React Native', 'Firebase', 'Redux']
       }
     ];
